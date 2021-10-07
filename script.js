@@ -1,24 +1,22 @@
+//maak een object genaamd person met key value pairs/properties name, age en evaluations
 let person = {
     age: 30,
-    name: "dream-girl888"
-}
-
+    name: "dream-girl888",
+    evaluations: [7,10 ,9],
+};
+//entire object loggen
 console.log(person);
 
-//alleen log value name en age
+//alleen log value name en age, is dot notatie
 console.log(person.name);
 console.log(person.age);
 
-//punt notatie 
-person.name = "dream-girl888";
-person.age = 30;
-
 //bracket notatie
-let selection = "name";
-person[selection] = "dream-girl888";
+console.log(person["name"]);
+console.log(person["age"]);
 
-let evaluations = [7, 10, 9];
-console.log(evaluations);
+// extra key-value pair
+console.log(person.evaluations);
 //waarde van evaluations is 7,10, 9
 
 //array maken en selecteren
@@ -47,6 +45,8 @@ let greeting = "greeting: hi ik ben een object";
 selectedColors.push(greeting);
 console.log(selectedColors);
 console.log(selectedColors[selectedColors.length - 1]);
+
+
 
 
 
